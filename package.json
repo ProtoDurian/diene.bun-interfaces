@@ -1,0 +1,77 @@
+{
+  "name": "@atomicloud/diene.interfaces",
+  "version": "1.0.0",
+  "description": "Dependency-light Result-based ports and framework-free in-memory test helpers for the AtomiCloud Bun family.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./test-helper": {
+      "import": {
+        "types": "./dist/test-helper.d.ts",
+        "default": "./dist/test-helper.js"
+      },
+      "require": {
+        "types": "./dist/test-helper.d.cts",
+        "default": "./dist/test-helper.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "skills"
+  ],
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtomiCloud/diene.bun-interfaces.git"
+  },
+  "homepage": "https://github.com/AtomiCloud/diene.bun-interfaces#readme",
+  "bugs": {
+    "url": "https://github.com/AtomiCloud/diene.bun-interfaces/issues"
+  },
+  "license": "MIT",
+  "author": "AtomiCloud",
+  "keywords": [
+    "atomicloud",
+    "interfaces",
+    "ports",
+    "result",
+    "testing",
+    "esm",
+    "cjs",
+    "metrics",
+    "logging"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@atomicloud/diene.result": "1.0.2"
+  },
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.18.2",
+    "@biomejs/biome": "^2.5.1",
+    "@types/bun": "^1.3.14",
+    "@types/node": "^26.0.1",
+    "dts-bundle-generator": "^9",
+    "knip": "^6.23.0",
+    "publint": "^0.3.16",
+    "should": "^13.2.3",
+    "typescript": "^6.0.3"
+  }
+}
